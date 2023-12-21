@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furniture page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/bootstrap-icons.svg">
+   
+ 
+ <style>
+        *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+.banner{
+    width:100%;
+    height:100vh;
+    background-image: url("fur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin-top: 3%;
+}
+
+.navbar{
+    width:100%;
+    margin:auto;
+    padding: 35px 0;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+
+}
+
+.div.navbar.img{
+    width:100px;
+    cursor:pointer;
+
+}
+button{
+  width:200px;
+  padding:15px 0;
+  text-align: center;
+  margin:20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border:2px solid gold;
+  background: transparent;
+  color:white;
+  position:relative;
+  cursor:pointer;
+}
+span{
+  background: darkblue;
+  height:100%;
+  width:100%;
+  border-radius: 25px;
+  position:absolute;
+  transition: -5s;
+  left:0;
+  bottom:0;
+  z-index:-1;
+}
+button:hover.span{
+  width:100%;
+}
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 20px;
+    margin-bottom: 77px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    background: #009688;
+    position:absolute;
+    left:0;
+    transition: 0.5s;
+    bottom: -10px;
+
+}
+.navbar ul li:hover::after{
+    width:10%;
+}
+.cone{
+  width:100%;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  text-align: center;
+  color:antiquewhite;
+
+}
+.cone h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+.cone p{
+  margin:20px auto;
+  font-weight: 100;
+  line-height: 25px;
+
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	background: black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  blue;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nav.container {
+  background-color: darkblue;
+  padding: 10px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.nav.container2{
+  background-color: black;
+  padding: 10px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.nav h3 {
+  margin: 0;
+  color:white;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text {
+  flex: 2;
+}
+
+.text p {
+  margin: 0;
+}
+/*other method*/
+
+.nav {
+  background-color: darkblue;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container h3 {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text {
+  flex: 2;
+}
+
+.text h1 {
+  margin: 0;
+  margin-bottom: 5%;
+  color: orange;
+  
+}
+.text h1.font{
+	font-size: 25px;
+	color: grey;
+	margin-bottom: 10%;
+}
+.cta-button {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10%;
+}
+
+.cta-button:hover {
+  background-color:grey;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    body{
+        font-family: 'Poppins', sans-serif;
+        background-color: #eee;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .section{
+        display: inline-block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .section h1{
+        margin-top: 40px;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: rgb(27, 150, 232);
+    }
+
+    .container-1{
+        display: block;
+        float: left;
+        width: 50%;
+        padding: 20px 40px;
+    }
+
+    .container-2{
+        display: block;
+        float: right;
+        width: 50%;
+        padding: 20px 40px;
+    }
+
+    .faq{
+        max-width: 100%;
+        margin-bottom: 50px;
+        padding: 25px 30px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px 5px #aaa;
+        border-radius: 10px;
+    }
+
+    .question{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        letter-spacing: 2px;
+    }
+
+    .question h2{
+        font-size: 22px;
+        color: rgb(27, 150, 232);
+    }
+
+    .question i{
+        font-size: 24px;
+        color: rgb(27, 150, 232);
+        cursor: pointer;
+    }
+
+    .answer{
+        max-height: 0;
+        transition: max-height 1s;
+    }
+
+    .answer p{
+        padding-top: 20px;
+        font-size: 15px;
+        color:darkblue;
+        letter-spacing: 2px;
+    }
+
+    .faq.active .answer{
+        max-height: 250px;
+    }
+
+    @media screen and (max-width: 850px){
+
+        .section{
+            display: table;
+        }
+
+        .container-1{
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .container-2{
+            width: 100%;
+            padding: 0 20px; 
+        }
+
+        .question h2{
+            font-size: 17px;
+        }
+
+        .answer p{
+            font-size: 14px;
+        }
+        
+    }
+
+
+    .video-container {
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background-color: white;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-right: 90%;
+}
+
+.video-section {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+
+.video {
+  background-color: #f2f2f2;
+  width: 30px;
+  height: 50px; 
+}
+.video2 {
+  background-color: #f2f2f2;
+  width: 30px; 
+  height: 50px; 
+  margin-left: 50%;
+  
+}
+.description {
+  background-color:darkgray;
+  width:100vw;
+  /* Add description styling */
+}
+
+.problem-solution {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.section-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.problem-description,
+.solution-description {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+}
+
+.imge {
+  width: 950px; /* Adjust the width as needed */
+  height: 700px;
+  margin-left: 30px;
+}
+
+.text2 {
+  flex-grow: 1;
+}
+
+.text2 h2 {
+  font-size: 24px;
+ 
+  margin-right: 20px;
+
+}
+
+.text2 p {
+  font-size: 16px;
+  color: #666;
+
+}
+
+    </style>
+</head>
+<body>
+<div class="banner">
+   <div class="navbar">
+    <img src="log.jpeg" height="80px" alt="">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+       
+</div>
+     <div class="cone">
+      <h1>Design your home</h1>
+      <br>
+      <p>SUBSCRIBE CODE ARTISTIC FOR MORE</p>
+      <div>
+        <button type="button"><span></span>WATCH MORE</button>
+        <button type="button"><span></span>SUBSCRIBE</button>
+
+      </div>
+     </div>
+</div>
+
+
+<div class="nav">
+  <div class="container">
+    <h3>Hero</h3>
+  </div>
+</div>
+<div class="content">
+  <div class="image">
+    <img src="ab.jpeg"height="700px" width="300px" alt="Image">
+  </div>
+  <div class="text">
+    <h1>our company deals with all
+		the necessaries you need for your home furniture</h1>
+	<h1 class="font">.our goal is to make sure providing high-quality products to our costumer
+		 including furnitures for bedrooms,kitchens,living rooms..</h1>
+     <br><br><br>
+		 <button class="cta-button">CALL TO ACTION</button>
+  </div>
+</div>
+
+<div class="nav">
+  <div class="container2">
+    <h3>problem/solution</h3>
+  </div>
+</div>
+<div class="container3">
+  <div class="text2">
+    <h2 class="pro">Problem</h2>
+    <p class="pro">At the start of 2022, the furniture sector faced the global economic 
+    slowdown that all industries faced. However, the rising cost of raw materials, supply chain issues and the 
+    ongoing energy crisis have further impacted furniture businesses around the world.</p>
+    <br><br><br>
+    <h2 class="sol">solution</h2>
+    <p class="sol">Of course, we also know that money is not an ever flowing resource for new initiatives so, when planning to expand sales, it is worth betting on solutions that will allow you to do it quickly and with a relatively small investment. A marketplace offer is a good first step. 
+      If this formula works, the next step may be to invest in your own e-commerce platform. ­­­</p>
+  </div>
+
+  <img src="prob.jpeg"  alt="Image" class="imge">
+</div>
+
+     <div class="nav">
+      <div class="container">
+        <h3>Testimonials</h3>
+      </div>
+    </div>
+      <div class="video-container">
+      <div class="video-section">
+        <div class="video">
+          <br><br><br>
+          <video src="production_id_3773486 (1080p).mp4" height="280px" width="600px" controls></video>
+    
+        </div>
+        <div class="video2">
+          <video src="production_id_3770033 (1080p).mp4" height="280px" width="600px" controls></video>
+    
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="description">
+          <h3>Video 2</h3>
+          <p>A furniture company, or also called a home furnishing company belongs in an industry that manufactures and 
+            sells furniture. Aside from furniture, they also produce and sell textiles, upholstery, bedding, 
+            seating, and other products related to offices and commercial spaces.
+          </p>
+      
+        </div>
+       
+      </div>
+    </div>
+
+	 <div class="section">
+        <h1>FAQ</h1>
+        <div class="container-1">
+
+            <div class="faq">
+                <div class="question">
+                    <h2>How will this piece of furniture fit into my home?</h2>
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </div>
+                <div class="answer">
+                  <br>
+                    <p>You want to make sure that whatever you are buying is going to be the right size for your living space. If it's too big.</p>
+                </div>
+            </div>
+             <br>
+            <div class="faq">
+                <div class="question">
+                    <h2>What is the quality of this furniture?</h2>
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </div>
+                <div class="answer">
+                  <br>
+                    <p>Furniture can be made from a variety of materials, including wood, metal, and plastic. You want to make sure that what you're buying will last for years - not just a few months.</p>
+                </div>
+            </div>
+  <br><br> <br>
+    </div><div class="container-1">
+
+      <div class="faq">
+          <div class="question">
+              <h2>How often will this piece of furniture be used?</h2>
+              <i class="fa fa-arrow-circle-o-right"></i>
+          </div>
+          <div class="answer">
+            <br> <br>
+              <p>This is an important question to ask if you're not wanting to purchase something that's going to sit in your garage or storage unit..</p>
+          </div>
+      </div>
+     <br><br>
+      <div class="faq">
+          <div class="question">
+              <h2>What type of material is this furniture made from?</h2>
+              <i class="fa fa-arrow-circle-o-right"></i>
+          </div>
+          <div class="answer">
+            <br>
+              <p>Furniture can be made from a variety of materials, each with its own benefits and drawbacks. Wood is often a popular choice because it's durable and looks nice</p>
+          </div>
+      </div>
+<br><br>
+</div>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br>
+	<script src="script.js"></script>
+
+	
+	 
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Panache XI<span>XI</span></h3>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Email us</a>
+					
+					<a href="#">Blog</a>
+				
+					<a href="#">Pricing</a>
+				
+					<a href="#">About us</a>
+					
+					<a href="#">Our Team</a>
+					
+					<a href="#">more info</a>
+				</p>
+
+				<p class="footer-company-name">Panache © 2023</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>44,badaro,beirut</span> Beside Zara</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+961.71 439 553</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+    
+</body>
+</html>
